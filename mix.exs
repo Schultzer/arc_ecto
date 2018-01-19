@@ -45,8 +45,9 @@ defmodule Arc.Ecto.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:arc,  "~> 0.8.0"},
+      {:arc, github: "schultzer/arc", branch: "add-httpoison-1-0"},
       {:ecto, "~> 2.0"},
+      {:decimal, "~> 1.1 or ~> 1.4", only: :test},
       {:mock, "~> 0.1.1", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
